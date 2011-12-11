@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll automatically include all the
+ * stylesheets available in this directory and any sub-directories.
+ * You're free to add application-wide styles to this file and they'll
+ * appear at the top of the compiled file, but it's generally better
+ * to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+ */
+
+/* START_HIGHLIGHT */
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+/*End Reset*/
+
+#banner {
+    background: #9c9;
+    padding: 10px;
+    border-bottom: 2px solid;
+    font: small-caps 40px/40px "Times New Roman", serif;
+    color: #282;
+    text-align: center;
+    
+    img {
+        float: left;
+    }
+}
+
+#notice {
+    color: #000 !important;
+    border: 2px solid red;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: #f0f0f0;
+    font: bold smaller sans-serif;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 30px #555;
+    padding: 20px;
+    background: #FFF;
+    
+    #main {
+        margin-left: 17em;
+        padding: 1em;
+        background: white;
+    }
+    
+    #side {
+        float: left;
+        padding: 1em 2em;
+        width: 13em;
+        background: #141;
+        border-radius: 8px;
+        
+        ul {
+            padding: 0;
+            
+            li {
+                list-style: none;
+                
+                a {
+                    color: #bfb;
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
+/* END_HIGHLIGHT */
