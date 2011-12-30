@@ -106,6 +106,25 @@ footer,header,hgroup,menu,nav,section,summary {
         background: #141;
         border-radius: 8px;
         
+        form, div {
+          display: inline;
+        }  
+ 
+        input {
+          font-size: small;
+        }
+
+        #cart {
+          font-size: smaller;
+          color:     white;
+
+          table {
+            border-top:    1px dotted #595;
+            border-bottom: 1px dotted #595;
+            margin-bottom: 10px;
+          }
+        }
+        
         ul {
             padding: 0;
             
