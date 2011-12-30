@@ -18,9 +18,9 @@
   </div>
   <div id="wrapper">
     <div id="side">
-      <div id="cart">
+      <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
         <%= render @cart %>
-      </div>
+      <% end %>
       
       <ul>
         <li><a href="http://www....">Home</a></li>
