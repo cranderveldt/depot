@@ -8,7 +8,6 @@
  *= require_tree . 
  */
 
-/* START_HIGHLIGHT */
 /* Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -138,5 +137,38 @@ footer,header,hgroup,menu,nav,section,summary {
             }
         }
     }
+    .depot_form {
+      fieldset {
+        background: #efe;
+        legend {
+          color: #dfd;
+          background: #141;
+          font-family: sans-serif;
+          padding: 0.2em 1em;
+        }
+      }
+
+      form {
+        label {
+          width: 5em;
+          float: left;
+          text-align: right;
+          padding-top: 0.2em;
+          margin-right: 0.1em;
+          display: block;
+        }
+
+        select, textarea, input {
+        margin-left: 0.5em;
+      }
+
+      .submit {
+        margin-left: 4em;
+      }
+
+      br {
+        display: none
+      }
+    }
+  }
 }
-/* END_HIGHLIGHT */
